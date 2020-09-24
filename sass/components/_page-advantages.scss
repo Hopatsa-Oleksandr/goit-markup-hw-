@@ -1,0 +1,43 @@
+.page-advantages .shadow {
+  @extend %invisible-title;
+}
+
+.page-advantages .list {
+  @extend %list;
+  display: flex;
+}
+.page-advantages .item {
+  width: calc((100% - 3 * 30px) / 4);
+  margin-right: 30px;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+}
+
+.icon-advantage {
+  padding: 25px 100px 25px 100px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+
+.page-advantages .adv-title {
+  font-size: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.page-advantages .description {
+  color: $secondary-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.03em;
+}
